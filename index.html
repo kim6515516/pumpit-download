@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PIU 발판 키보드 매퍼</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #0f1115;
+    --card: #171a21;
+    --text: #e8eaed;
+    --muted: #9aa0a6;
+    --accent: #4CAF50;
+    --accent-dark: #388e3c;
+    --border: #2a2e37;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f5f6f8;
+      --card: #ffffff;
+      --text: #1a1d21;
+      --muted: #5f6368;
+      --border: #e2e4e8;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "Segoe UI", "Malgun Gothic", Roboto, sans-serif;
+    padding: 24px;
+  }
+  .card {
+    width: 100%;
+    max-width: 480px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 40px 32px;
+    text-align: center;
+  }
+  .pad-icon {
+    font-size: 40px;
+    margin-bottom: 8px;
+  }
+  h1 {
+    font-size: 22px;
+    margin: 0 0 6px;
+  }
+  p.desc {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 28px;
+  }
+  .download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 14px 28px;
+    border-radius: 10px;
+    transition: background 0.15s ease;
+  }
+  .download-btn:hover { background: var(--accent-dark); }
+  .meta {
+    margin-top: 14px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .req {
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-size: 12px;
+    color: var(--muted);
+    text-align: left;
+    line-height: 1.7;
+  }
+  .req b { color: var(--text); }
+  footer {
+    margin-top: 24px;
+    font-size: 11px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="pad-icon">🕹️</div>
+    <h1>PIU 발판 키보드 매퍼</h1>
+    <p class="desc">Andamiro Pump it Up! 가정용 발판(USB) 입력을 키보드 입력으로 변환하는 프로그램입니다.</p>
+
+    <a class="download-btn" href="PIU_Mapper.exe" download>
+      ⬇ PIU_Mapper.exe 다운로드
+    </a>
+    <div class="meta">Windows 10 / 11 · 설치 불필요</div>
+
+    <div class="req">
+      <b>사용법</b><br>
+      1. 발판 USB 연결 → 2. PIU_Mapper.exe 실행 → 3. '▶ 시작' 클릭<br>
+      패널 버튼을 클릭하면 원하는 키로 매핑을 변경할 수 있습니다.
+    </div>
+  </div>
+
+  <footer>
+    상업적 무단 배포와 이용은 금지합니다.<br>
+    문의: <a href="mailto:kim6515516@gmail.com">kim6515516@gmail.com</a>
+  </footer>
+</body>
+</html>
