@@ -155,6 +155,44 @@
     line-height: 1.6;
   }
   .usecase a { color: var(--accent); font-weight: 600; }
+  .products {
+    margin-top: 20px;
+    text-align: left;
+  }
+  .products h2 {
+    font-size: 13px;
+    margin: 0 0 10px;
+    color: var(--text);
+  }
+  .product-card {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    text-decoration: none;
+    color: inherit;
+  }
+  .product-card img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 8px;
+    background: var(--key-bg);
+    flex-shrink: 0;
+  }
+  .product-card .p-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.4;
+  }
+  .product-card .p-sub {
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 3px;
+  }
   footer {
     margin-top: 24px;
     font-size: 11px;
@@ -201,6 +239,17 @@
       1. 발판 USB 연결 → 2. PIU_Mapper.exe 실행 → 3. '▶ 시작' 클릭<br>
       패널 버튼을 클릭하면 원하는 키로 매핑을 변경할 수 있습니다.
     </div>
+
+    <div class="products">
+      <h2 data-t="products-title">✅ 지원 제품</h2>
+      <a class="product-card" href="https://www.11st.co.kr/products/198635549" target="_blank" rel="noopener">
+        <img src="https://cdn.011st.com/11dims/resize/600x600/quality/75/11src/product/198635549/B.webp?685059545" alt="안다미로 PC게임 펌프7집 PREX3 발판" loading="lazy">
+        <div>
+          <div class="p-name">안다미로 PC게임 펌프7집 PREX3 + 발판</div>
+          <div class="p-sub" data-t="products-sub">VID 0x0D2F / PID 0x0001 · 국내 정발 가정용 발판</div>
+        </div>
+      </a>
+    </div>
   </div>
 
   <footer data-t="footer-html">
@@ -224,6 +273,8 @@ const T = {
       패널 버튼을 클릭하면 원하는 키로 매핑을 변경할 수 있습니다.`,
     'footer-html': `상업적 무단 배포와 이용은 금지합니다.<br>
       문의: <a href="mailto:kim6515516@gmail.com">kim6515516@gmail.com</a>`,
+    'products-title': '✅ 지원 제품',
+    'products-sub': 'VID 0x0D2F / PID 0x0001 · 국내 정발 가정용 발판',
   },
   en: {
     title: 'PIU Pad Keyboard Mapper',
@@ -238,6 +289,8 @@ const T = {
       Click a panel button to remap it to any key you want.`,
     'footer-html': `Unauthorized commercial distribution or use is prohibited.<br>
       Contact: <a href="mailto:kim6515516@gmail.com">kim6515516@gmail.com</a>`,
+    'products-title': '✅ Supported Hardware',
+    'products-sub': 'VID 0x0D2F / PID 0x0001 · Korean-market home pad',
   },
 };
 
