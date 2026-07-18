@@ -193,6 +193,20 @@
     color: var(--muted);
     margin-top: 3px;
   }
+  .support {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+  .support-label {
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  .support img {
+    height: 42px;
+    display: inline-block;
+  }
   footer {
     margin-top: 24px;
     font-size: 11px;
@@ -250,6 +264,13 @@
         </div>
       </a>
     </div>
+
+    <div class="support">
+      <div class="support-label" data-t="support-label">☕ 이 프로그램이 도움이 되셨다면</div>
+      <a href="https://www.buymeacoffee.com/quizbank" target="_blank" rel="noopener">
+        <img src="assets/bmc-button.png" alt="Buy Me a Coffee">
+      </a>
+    </div>
   </div>
 
   <footer data-t="footer-html">
@@ -275,6 +296,7 @@ const T = {
       문의: <a href="mailto:kim6515516@gmail.com">kim6515516@gmail.com</a>`,
     'products-title': '✅ 지원 제품',
     'products-sub': 'VID 0x0D2F / PID 0x0001 · 국내 정발 가정용 발판',
+    'support-label': '☕ 이 프로그램이 도움이 되셨다면',
   },
   en: {
     title: 'PIU Pad Keyboard Mapper',
@@ -291,6 +313,7 @@ const T = {
       Contact: <a href="mailto:kim6515516@gmail.com">kim6515516@gmail.com</a>`,
     'products-title': '✅ Supported Hardware',
     'products-sub': 'VID 0x0D2F / PID 0x0001 · Korean-market home pad',
+    'support-label': '☕ If this app helped you out',
   },
 };
 
