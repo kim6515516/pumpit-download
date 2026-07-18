@@ -194,6 +194,13 @@
     color: var(--muted);
     margin-top: 3px;
   }
+  .device-note {
+    margin-top: 10px;
+    font-size: 11px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  .device-note a { color: var(--accent); font-weight: 600; }
   .support {
     margin-top: 20px;
     padding-top: 20px;
@@ -264,6 +271,9 @@
           <div class="p-sub" data-t="products-sub">안다미로 PIU 발판(홈매트)과 동일한 통신 방식(VID 0x0D2F / PID 0x0001) · 국내 정발 가정용 발판</div>
         </div>
       </a>
+      <div class="device-note" data-t="device-note-html">
+        현재 위 기기 1개로만 테스트했습니다. 다른 홈매트/발판으로 잘 작동한다면 어떤 제품인지 <a href="mailto:kim6515516@gmail.com">kim6515516@gmail.com</a>으로 알려주세요. 확인 후 지원 기기 목록에 추가하겠습니다.
+      </div>
     </div>
 
     <div class="support">
@@ -298,6 +308,7 @@ const T = {
     'products-title': '✅ 지원 제품',
     'products-sub': '안다미로 PIU 발판(홈매트)과 동일한 통신 방식(VID 0x0D2F / PID 0x0001) · 국내 정발 가정용 발판',
     'support-label': '☕ 이 프로그램이 도움이 되셨다면',
+    'device-note-html': `현재 위 기기 1개로만 테스트했습니다. 다른 홈매트/발판으로 잘 작동한다면 어떤 제품인지 <a href="mailto:kim6515516@gmail.com">kim6515516@gmail.com</a>으로 알려주세요. 확인 후 지원 기기 목록에 추가하겠습니다.`,
   },
   en: {
     title: 'PIU Pad Keyboard Mapper',
@@ -315,6 +326,7 @@ const T = {
     'products-title': '✅ Supported Hardware',
     'products-sub': 'Uses the same communication protocol as the Andamiro PIU pad (VID 0x0D2F / PID 0x0001) · Korean-market home pad',
     'support-label': '☕ If this app helped you out',
+    'device-note-html': `Only tested with the one device above. If yours (a different home pad/mat) works well too, let me know what product it is at <a href="mailto:kim6515516@gmail.com">kim6515516@gmail.com</a> and I'll add it to the supported list.`,
   },
 };
 
